@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="logo/logo.svg" alt="logo">
+        <div class="navlinks">
+            <ul>
+                <li><a href='#about_me'>About Me</a></li>
+                <li><a href='#skills'>Skills</a></li>
+                <li><a href='#' onclick="openForm()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <a href="https://github.com/" id="github logo"><img src='images/icons8-github-100.svg'></a>
+        <a href="https://linkedin.com" id="linkedin"><img src='images/icons8-linkedin-100.svg'></a>
+        <a href="https://twitter.com" id="twitter"><img src='images/icons8-twitter-100.svg'></a>
+        <img src='images/line.svg' id="line">
+    </div>
+    <main class="container">
+        <div class="landing_page">
+            <h7 class="intro">Hi, my name is:</h7>
+            <h1 class="name">Brenton Holstein</h1>
+            <h2 class="subheader">I am learning web development.</h3>
+            <p class="pers__statement">I'm currently learning the fundamentals of web development and have created this website to test the knowledge I have learnt.
+                Through my journey as a web developer, I aim to accumulate the knowledge required to eventually reach my goal of becoming a
+                software engineer.
+            </p>
+            <button class="contact" title="Contact Me" onclick="openForm()">Contact Me</button>
+        </div>
+        <div class="about_me" id="about_me">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quam molestiae nam maiores ratione commodi rerum labore placeat tempore fuga, ipsam, cupiditate sapiente hic vitae voluptatibus eveniet itaque consequatur praesentium atque. Laudantium mollitia, esse deserunt tempore magni velit nemo. Quos, commodi. Quod temporibus dignissimos consequatur perferendis totam ipsum iste numquam assumenda error dicta non ut similique, accusamus dolorem, officia eveniet voluptatem, possimus dolores asperiores nesciunt eum pariatur? Nobis quia obcaecati nostrum alias blanditiis, impedit dolorem minus saepe natus, ut praesentium ab vero quasi dolore dolorum quod atque culpa. Enim deserunt assumenda ipsam inventore, nesciunt eos nemo cumque deleniti totam voluptate.</p>
+        </div>
+        <div class="skills" id="skills">
+            <h1>Skills</h1>
+            <p>(Adding to it slowly)</p>
+            <div class="p_icons">
+                <img src="images/icons8-python-50.png" class="python_logo">
+                <img src="images/icons8-javascript-50.png" class="js_logo">
+                <img src="images/icons8-react-native-50.png" class="react_logo">
+                <img src="images/icons8-html-5-50.png" class="html_logo">
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <div class="form_popup" id="form_popup">
+        <form class="form-container" id="contactform">
+            <button type="submit" class="btn_cancel" onclick="closeForm()">x</button>
+            <h1>Contact Me</h1>
+            <div class="form_names">
+                <input type="text" placeholder="First Name" name="firstName" required>
+                <input type="text" placeholder="Surname" name="surname" required>
+            </div>
+            <div class="form_email">
+                <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+            <div class="form_mssg">
+                <textarea name="mssg" form="contactform" placeholder="Enter your message here..."></textarea>
+                <!--<input type="text" placeholder="Enter your message" name="mssg" required>-->
+            </div>
+            <div class="form_buttons">
+                <button type="submit" class="btn">Submit</button>
+                <!--<button type="submit" class="btn_cancel" onclick="closeForm()">X</button>-->
+            </div>
+        </form>
+    </div> 
+</html>
